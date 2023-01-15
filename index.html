@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to ArtisTalk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-sharp fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>14:20</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-sharp fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to ArtisTalk</h1>
+      <p class="welcome-header__text">
+        If you are an Artist, log in with your Art Piece Name.
+      </p>
+    </header>
+    <form action="artists.html" method="get" id="login-form">
+      <input
+        name="username"
+        type="text"
+        required
+        placeholder="Art Piece Name"
+        style="background: transparent"
+      />
+      <input
+        name="password"
+        type="password"
+        required
+        placeholder="Password"
+        style="background: transparent"
+      />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Your Art Piece</a>
+    </form>
+    <div id="no-mobile">
+      <span>Too Big Screen</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/5bc3e66188.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
